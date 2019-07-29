@@ -1,0 +1,47 @@
+.midd1 {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    /*background-color: #baf;*/
+    margin-top: 90px;
+
+}
+
+.midd1 .header {
+    width: 100%;
+    height: 100px;
+    /*background-color: red;*/
+    text-align: center;
+}
+
+.midd1 .header .headerx {
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    /*background-color: springgreen;*/
+}
+
+.midd1 .header .header1 {
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 100px;
+    height: 40px;
+    float: left;
+    background-color: white;
+}
+
+.midd1 .header .header2 {
+    float: left;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+}
+
+#wrapper2 {
+    height: 350px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    /*background-color: deeppink;*/
+}

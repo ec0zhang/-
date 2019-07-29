@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDL♡☆座位</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="cleartype" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../style/seat1.css">
+    <link rel="stylesheet" href="../style/seat2.css">
+
+    <style>
+
+        @font-face {
+            font-family: stonefont;
+            src: url('//vfile.meituan.net/colorstone/cc8079d0c617efbe85141e4d7b75be183168.eot');
+            src: url('//vfile.meituan.net/colorstone/cc8079d0c617efbe85141e4d7b75be183168.eot?#iefix') format('embedded-opentype'),
+            url('//vfile.meituan.net/colorstone/202fdab010e72d4adbee8527a4f716ca2080.woff') format('woff');
+        }
+    </style>
+    <style type="text/css">
+        @media only screen and (min-width: 320px) {
+            .mtfe-tip-mtfe-wrapper {
+                display: none;
+                position: absolute;
+                width: 70%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: 9em;
+                padding: .5em 1em;
+                border-radius: .25em;
+                background: rgba(0, 0, 0, .7);
+                color: #fff;
+                z-index: 3;
+                text-align: center
+            }
+
+            @media only screen and (min-width: 320px) {
+                .mtfe-tip-mtfe-wrapper {
+                    font-size: 16px
+                }
+            }
+
+            @media only screen and (min-width: 480px) {
+                .mtfe-tip-mtfe-wrapper {
+                    font-size: 24px
+                }
+            }
+
+            @media only screen and (min-width: 560px) {
+                .mtfe-tip-mtfe-wrapper {
+                    font-size: 30px
+                }
+            }
+
+            .mtfe-model-mtfe-wrapper {
+                display: none;
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: 9em;
+                padding: .5em 0;
+                border-radius: .25em;
+                background: #fff;
+                color: #fff;
+                z-index: 3;
+                text-align: center
+            }
+
+            @media only screen and (min-width: 320px) {
+                .mtfe-model-mtfe-wrapper {
+                    font-size: 16px
+                }
+            }
+
+            @media only screen and (min-width: 480px) {
+                .mtfe-model-mtfe-wrapper {
+                    font-size: 24px
+                }
+            }
+
+            @media only screen and (min-width: 560px) {
+                .mtfe-model-mtfe-wrapper {
+                    font-size: 30px
+                }
+            }
+
+            .mtfe-smscodeyoda-mtfe-wrapper {
+                display: none;
+                width: 80%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                top: 40%;
+                position: absolute;
+                z-index: 2
+            }
+
+            .mtfe-mask-mtfe-wrapper {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+                background: rgba(0, 0, 0, .6);
+                width: 100%;
+                height: 100%;
+                z-index: 1
+            }
+
+            .iLoginComp-wrapper {
+                width: 100%;
+                padding: 1.2em;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box
+            }
+
+            @media only screen and (min-width: 320px) {
+                .iLoginComp-wrapper {
+                    font-size: 16px
+                }
+            }
+
+            @media only screen and (min-width: 480px) {
+                .iLoginComp-wrapper {
+                    font-size: 24px
+                }
+            }
+
+            @media only screen and (min-width: 560px) {
+                .iLoginComp-wrapper {
+                    font-size: 30px
+                }
+            }
+
+            .iLoginComp-phone-num-wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                /*-ms-flex-pack: distribute;*/
+                justify-content: space-around;
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: .6em
+            }
+
+            .iLoginComp-phone-num-input {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                border: 0;
+                min-width: 0;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                font-size: 1em
+            }
+
+            .iLoginComp-phone-num-input, .iLoginComp-phone-num-input:focus {
+                outline: none;
+                background-color: inherit
+            }
+
+            .iLoginComp-phone-num-input::-webkit-input-placeholder {
+                color: #ccc
+            }
+
+            .iLoginComp-phone-num-input:-ms-input-placeholder, .iLoginComp-phone-num-input::-ms-input-placeholder {
+                color: #ccc
+            }
+
+            .iLoginComp-phone-num-input::placeholder {
+                color: #ccc
+            }
+
+            .iLoginComp-verify-code-wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                /*-ms-flex-pack: distribute;*/
+                justify-content: space-around;
+                margin-top: 1em;
+                padding-bottom: .6em;
+                border-bottom: 1px solid #e5e5e5;
+                width: 100%;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none
+            }
+
+            .iLoginComp-code-input {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                width: 100%;
+                border: 0;
+                min-width: 0;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                font-size: 1em
+            }
+
+            .iLoginComp-code-input, .iLoginComp-code-input:focus {
+                outline: none;
+                background-color: inherit
+            }
+
+            .iLoginComp-code-input::-webkit-input-placeholder {
+                color: #ccc
+            }
+
+            .iLoginComp-code-input:-ms-input-placeholder, .iLoginComp-code-input::-ms-input-placeholder {
+                color: #ccc
+            }
+
+            .iLoginComp-code-input::placeholder {
+                color: #ccc
+            }
+
+            .iLogincomp-opbtn-wrapper {
+                margin-top: 2em
+            }
+
+            .iLoginComp-cancel-btn-wrapper, .iLoginComp-login-btn-wrapper {
+                text-align: center;
+                color: #999;
+                background: #e5e5e5;
+                height: 2.8em;
+                line-height: 2.8em;
+                border-radius: .3em;
+                width: 100%;
+                display: block;
+                border: none;
+                cursor: pointer;
+                font-size: 1em;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+            }
+
+            .iLoginComp-cancel-btn-wrapper:focus, .iLoginComp-login-btn-wrapper:focus {
+                outline: 0
+            }
+
+            .iLoginComp-login-btn-wrapper.iLogincomp-active {
+                color: #fff;
+                background: #06c1ae
+            }
+
+            .iLoginComp-send-verify-code-text {
+                font-size: .8em;
+                color: #999;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                background-color: #dcdcdc;
+                border: 1px solid #dcdcdc;
+                padding: .2em .5em;
+                border-radius: .2em;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+            }
+
+            .iLoginComp-send-verify-code-text.iLogincomp-active {
+                color: #06c1ae;
+                border: 1px solid #06c1ae;
+                background: 0
+            }
+
+            .iLogincomp-count-down {
+                color: #999;
+                background-color: #dcdcdc;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                width: 2em
+            }
+        }
+
+        .top1 {
+            width: 100%;
+            height: 39px;
+            background-color: rgba(187, 170, 255, 0.94);
+            /*background:url(img/1.11.png);*/
+        }
+
+        /*首页导航栏*/
+        .top1 .a {
+            width: 100%;
+            height: 38px;
+            background: /*rgba(255,255,255,0.5);*/ white;
+        }
+
+        .top1 .a .b { /*无序列表*/
+            width: 1200px;
+            height: 38px;
+            /*	background-color:pink;*/
+            margin: 0 auto;
+        }
+
+        .top1 .a .b ul li {
+            width: 70px;
+            height: 38px;
+            /*快速注释 Ctrl+/*/
+            list-style: none; /*取消无序列表前的小圆点*/
+
+            float: left; /*让无序列表横着,默认是竖着的*/
+            line-height: 38px; /*上下居中 输入行高 字一行的高度 会自动到38的一半的高度 */
+            text-align: center; /*左右居中*/
+            font-size: 16px;
+            text-align: center;
+            font-family: 微软雅黑;
+            /*background-color:deeppink;*/
+
+        }
+
+        .top1 .a .b ul li:hover /*当鼠标放到元素上变化*/
+        {
+            background: rgba(0, 0, 0, 0.3);
+
+        }
+
+        .top1 .a .b ul li a {
+            text-decoration: none; /*取消a的下划线*/
+            display: block;
+            height: 38px;
+            width: 70px;
+            /*a是行间元素 即不能设置长和宽要加那个display：block； 展示方式变成块级元素
+            div是块级元素 可以设置长和宽*/
+            color: #000;
+            font-size: 16px;
+        }
+
+        .top1 .a .b ul li.tougao {
+            height: 50px;
+            width: 70px;
+            background: deeppink;
+            border-radius: 0 0 15px 15px; /*上右下左 圆角*/
+
+        }
+
+        .top1 .a .b ul li.tougao a {
+            height: 50px;
+            width: 70px;
+            display: block;
+        }
+
+        .foot {
+            margin: 0 auto;
+            margin-top: 10%;
+            height: 20%;
+            width: 100%;
+            padding: 2% 0;
+            /*background-color:  #ef5556;*/
+            text-align: center;
+            color: white;
+            letter-spacing: 5px;
+            background: -webkit-linear-gradient(left top, lightpink, #ff8e95); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(bottom right, lightpink, #ff8e95); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(bottom right, lightpink, #ff8e95); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to bottom right, lightpink, #ff8e95); /* 标准的语法（必须放在最后）*/
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        #submit {
+            /*position: relative;*/
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            margin-right: 110px;
+            background: #d8d8d8;
+            cursor: pointer;
+            outline: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        #submit:hover {
+            background: #ef9784;
+            color: white;
+        }
+    </style>
+    <meta name="lx:autopv" content="off">
+    <meta name="lx:appnm" content="movie">
+    <meta name="lx:category" content="movie">
+</head>
+<body>
+<div class="top1" style="text-align:center;">
+    <div class="a">  <!--黑色-->
+        <div class="b">
+            <ul style="float:left;position: relative;top: -16px;">
+                <a href="#" style="float:left">
+                    <img src="../images/index/lala.gif" width="38px" height="38px"></a>
+                <li><a href="../首页.html">首页</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="cinema.html">影院</a></li>
+                <li><a href="game.html" target="_blank">小游戏</a></li>
+            </ul>
+            <ul style="float:right;position: relative;top: -16px;">
+
+                <li><a id="denglu" href="../pages/PDL登录.html" target="_blank">登录</a></li>
+                <li><a id="zhuce" href="../pages/PDL注册.html" target="_blank">注册</a></li>
+                <li id="tougao" class="tougao"><a href="" target="_blank">客服</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div style="clear: both"></div>
+<div class="container" id="app">
+    <div class="order-progress-bar">
+        <div class="step first done">
+            <span class="step-num">1</span>
+            <span class="step-text">选择影片场次</span>
+        </div>
+        <div class="step done">
+            <span class="step-num">2</span>
+            <span class="step-text">选择座位</span>
+        </div>
+        <div class="step ">
+            <span class="step-num">3</span>
+            <span class="step-text">14分钟内付款</span>
+        </div>
+        <div class="step last ">
+            <span class="step-num">4</span>
+            <span class="step-text">影院取票观影</span>
+        </div>
+    </div>
+
+    <div class="main clearfix">
+        <div class="hall">
+            <div class="seat-example">
+                <div class="selectable-example example">
+                    <span>可选座位</span>
+                </div>
+                <div class="sold-example example">
+                    <span>已售座位</span>
+                </div>
+                <div class="selected-example example">
+                    <span>已选座位</span>
+                </div>
+
+            </div>
+            <div class="seats-block" data-cols="9" data-section-id="0000000000000001" data-section-name="普通区"
+                 data-seq-no="201904020251675">
+                <div class="row-id-container">
+                    <span class="row-id">1</span>
+                    <span class="row-id">2</span>
+                    <span class="row-id">3</span>
+                    <span class="row-id">4</span>
+                    <span class="row-id">5</span>
+                    <span class="row-id">6</span>
+                </div>
+                <div class="seats-container">
+                    <div class="screen-container" style="left: 0;">
+                        <div class="screen">银幕中央</div>
+                        <div class="c-screen-line"></div>
+                    </div>
+
+                    <div class="seats-wrapper">
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="1"
+                                  data-no="0000000000000001-1-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span style="background: red;" class="seat selectable" data-column-id="02" data-row-id="1"
+                                  data-no="0000000000000001-1-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="1"
+                                  data-no="0000000000000001-1-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="1"
+                                  data-no="0000000000000001-1-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span style="background: red;" class="seat selectable" data-column-id="05" data-row-id="1"
+                                  data-no="0000000000000001-1-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span style="background: red;" class="seat selectable" data-column-id="06" data-row-id="1"
+                                  data-no="0000000000000001-1-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="1"
+                                  data-no="0000000000000001-1-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="1"
+                                  data-no="0000000000000001-1-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="1"
+                                  data-no="0000000000000001-1-09" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                        </div>
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="2"
+                                  data-no="0000000000000001-2-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="02" data-row-id="2"
+                                  data-no="0000000000000001-2-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="2"
+                                  data-no="0000000000000001-2-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="2"
+                                  data-no="0000000000000001-2-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="05" data-row-id="2"
+                                  data-no="0000000000000001-2-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="06" data-row-id="2"
+                                  data-no="0000000000000001-2-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="2"
+                                  data-no="0000000000000001-2-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="2"
+                                  data-no="0000000000000001-2-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="2" data-no="" data-st="E"
+                                  data-act="seat-click" data-bid="b_s7eiiijf"></span>
+                        </div>
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="3"
+                                  data-no="0000000000000001-3-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="02" data-row-id="3"
+                                  data-no="0000000000000001-3-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="3"
+                                  data-no="0000000000000001-3-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="3"
+                                  data-no="0000000000000001-3-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="05" data-row-id="3"
+                                  data-no="0000000000000001-3-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="06" data-row-id="3"
+                                  data-no="0000000000000001-3-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="3"
+                                  data-no="0000000000000001-3-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="3"
+                                  data-no="0000000000000001-3-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="3"
+                                  data-no="0000000000000001-3-09" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                        </div>
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="4"
+                                  data-no="0000000000000001-4-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="02" data-row-id="4"
+                                  data-no="0000000000000001-4-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="4"
+                                  data-no="0000000000000001-4-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="4"
+                                  data-no="0000000000000001-4-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="05" data-row-id="4"
+                                  data-no="0000000000000001-4-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="06" data-row-id="4"
+                                  data-no="0000000000000001-4-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="4"
+                                  data-no="0000000000000001-4-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="4"
+                                  data-no="0000000000000001-4-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="4"
+                                  data-no="0000000000000001-4-09" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                        </div>
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="5"
+                                  data-no="0000000000000001-5-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="02" data-row-id="5"
+                                  data-no="0000000000000001-5-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="5"
+                                  data-no="0000000000000001-5-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="5"
+                                  data-no="0000000000000001-5-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="05" data-row-id="5"
+                                  data-no="0000000000000001-5-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="06" data-row-id="5"
+                                  data-no="0000000000000001-5-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="5"
+                                  data-no="0000000000000001-5-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="5"
+                                  data-no="0000000000000001-5-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="5"
+                                  data-no="0000000000000001-5-09" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                        </div>
+                        <div class="row">
+                            <span class="seat selectable" data-column-id="01" data-row-id="6"
+                                  data-no="0000000000000001-6-01" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="02" data-row-id="6"
+                                  data-no="0000000000000001-6-02" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="03" data-row-id="6"
+                                  data-no="0000000000000001-6-03" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="04" data-row-id="6"
+                                  data-no="0000000000000001-6-04" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span style="background: red;" class="seat selectable" data-column-id="05" data-row-id="6"
+                                  data-no="0000000000000001-6-05" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span style="background: red;" class="seat selectable" data-column-id="06" data-row-id="6"
+                                  data-no="0000000000000001-6-06" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="07" data-row-id="6"
+                                  data-no="0000000000000001-6-07" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="08" data-row-id="6"
+                                  data-no="0000000000000001-6-08" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                            <span class="seat selectable" data-column-id="09" data-row-id="6"
+                                  data-no="0000000000000001-6-09" data-st="N" data-act="seat-click"
+                                  data-bid="b_s7eiiijf"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side">
+            <div class="movie-info clearfix">
+                <div class="poster">
+                    <img src="../images/common/复仇者联盟4.jpg">
+                </div>
+                <div class="content">
+                    <p class="name text-ellipsis">复仇者联盟4：终局之战</p>
+                    <div class="info-item">
+                        <span>类型 :</span>
+                        <span class="value">动作,冒险,奇幻</span>
+                    </div>
+                    <div class="info-item">
+                        <span>时长 :</span>
+                        <span class="value">181分钟</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-info">
+                <div class="info-item">
+                    <span>影院 :</span>
+                    <span class="value text-ellipsis">亿达影院</span>
+                </div>
+                <div class="info-item">
+                    <span>影厅 :</span>
+                    <span class="value text-ellipsis">VIP5号厅</span>
+                </div>
+                <div class="info-item">
+                    <span>版本 :</span>
+                    <span class="value text-ellipsis">英语3D</span>
+                </div>
+                <div class="info-item">
+                    <span>场次 :</span>
+                    <span class="value text-ellipsis screen">今天 4月2 12:45</span>
+                </div>
+                <div class="info-item">
+                    <span>票价 :</span>
+                    <span class="value text-ellipsis">￥33/张</span>
+                </div>
+            </div>
+
+            <div class="ticket-info">
+                <div class="no-ticket">
+                    <p class="buy-limit">座位：一次最多选4个座位</p>
+                    <p class="no-selected">请<span>点击左侧</span>座位图选择座位</p>
+                </div>
+                <div class="has-ticket" style="display:none">
+                    <span class="text">座位：</span>
+                    <div class="ticket-container" data-limit="4"></div>
+                </div>
+
+                <div class="total-price">
+                    <span>总价 :</span>
+                    <span id="price" class="price">0</span>
+                </div>
+            </div>
+            <!--<input  type="button" id="submit"  value="确认"/>-->
+            <!--<button id="submit">确认</button>-->
+            <div class="confirm-order">
+                <div id="iLoginComp" style="visibility: visible;">
+                    <div id="secYodaRoot" class="mtfe-secyoda-mtfe-wrapper"></div>
+                    <div id="smdcodeYodaRoot" class="mtfe-smscodeyoda-mtfe-wrapper"></div>
+                    <div class="mtfe-tip-mtfe-wrapper" id="iLoginCompShowTip"></div>
+                    <div class="mtfe-model-mtfe-wrapper" id="iLoginCompModel"></div>
+                    <div class="mtfe-mask-mtfe-wrapper" id="iLoginCompMask"></div>
+                    <div class="iLoginComp-wrapper " id="iLoginCompInner">
+
+                        <div class="iLogincomp-opbtn-wrapper">
+                            <button class="iLoginComp-cancel-btn-wrapper" id="cancelLogin" style="display:none;">
+                                取消
+                            </button>
+                            <button class="iLoginComp-login-btn-wrapper " id="iloginBtn" data-act="confirm-click"
+                                    data-bid="b_0a0ep6pp">
+                                <a style="color:white;" href="支付.html" target="_blank">确认选座</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-container" style="display: none">
+        <div class="modal">
+            <span class="icon"></span>
+            <p class="tip"></p>
+            <div class="ok-btn btn">我知道了</div>
+        </div>
+    </div>
+</div>
+
+<div class="foot">
+    <br><br>
+    @亿达影院（づ￣3￣）づ╭❤～<br>
+    <br>
+    欢迎来看电影鸭░|･x･`)在咩？
+</div>
+<script src="../JavaScript/tougao.js"></script>
+<script src="../JavaScript/seat.js"></script>
+
+<!--<script>-->
+    <!--let btn = document.getElementById('iloginBtn');-->
+    <!--let seats = document.getElementsByClassName('seat');-->
+    <!--btn.onclick = function () {-->
+        <!--console.log('111');-->
+        <!--setTimeout(function () {-->
+            <!--for (let i = 0; i <= seats.length; i++) {-->
+                <!--this.removeEventListener();-->
+            <!--}-->
+        <!--}, 2000)-->
+    <!--}-->
+<!--</script>-->
+</body>
+</html>

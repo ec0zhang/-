@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDL?☆影院</title>
+    <link rel="stylesheet" href="../style/cinema.css">
+
+</head>
+<body>
+
+<div class="top" style="text-align:center;">
+    <div class="a">  <!--黑色-->
+        <div class="b">
+            <ul style="float:left">
+                <a href="#" style="float:left;">
+                    <img src="../images/index/lala.gif" width="38px" height="38px"></a>
+                <li><a href="../首页.html">首页</a></li>
+                <li><a href="film.html">电影</a></li>
+                <li><a href="#">影院</a></li>
+                <li><a href="game.html">小游戏</a></li>
+            </ul>
+            <ul style="float:right">
+
+                <li><a id="denglu" href="../pages/PDL登录.html" target="_blank">登录</a></li>
+                <li><a id="zhuce" href="../pages/PDL注册.html" target="_blank">注册</a></li>
+                <li id="tougao" class="tougao"><a href="#" target="_blank">客服</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="content">
+    <div class="mid-first">
+        <div class="lll">
+            <span>选择地区:</span>
+            <a class="btn-1 btn-2" href="#"  onclick=show()>全部</a>
+            <a class="btn-1" href="#"        onclick=show1()>长安区</a>
+            <a class="btn-1" href="#"        onclick=show2()>雁塔区</a>
+            <a class="btn-1" href="#"        onclick=show3()>高新区</a>
+        </div>
+    </div>
+    <div class="mid-second">
+        <span>选择放映厅:</span>
+        <div class="lll">
+            <a href="#" class="btn-1 btn-2"  onclick=show()>全部</a>
+            <a href="#" class="btn-1"  onclick=show1()>IMAX厅</a>
+
+            <a href="#" class="btn-1"  onclick=show1()>杜比全景声厅</a>
+            <a href="#" class="btn-1"  onclick=show2() >Dolby Cinema厅</a>
+            <a href="#" class="btn-1"  onclick=show1()>RealD厅</a>
+
+            <a href="#" class="btn-1"  onclick=show2()>4DX厅</a>
+            <a href="#" class="btn-1"  onclick=show2()>DTS:X 临境音厅</a>
+            <a href="#" class="btn-1"  onclick=show3()>儿童厅</a>
+
+            <a href="#" class="btn-1"  onclick=show3()>巨幕厅</a>
+        </div>
+    </div>
+</div>
+<div class="information">
+    <div class="info">影院列表</div>
+    <div class="infos">
+        <div class="vot" id="vot1" style="display: block;">
+            <div class="tiaomu">
+                <a href="cinemadetail.html">长安亿达影院</a>
+            </div>
+            <div class="here">
+                地址：长安区郭杜街办茅坡村
+            </div>
+            <div class="btn-shop">
+                <a href="cinemadetail.html" class="shopping">选座购票</a>
+            </div>
+        </div>
+        <div class="vot" id="vot2" style="display: block;">
+            <div class="tiaomu">
+                <a href="cinemadetail.html">雁塔亿达影院</a>
+            </div>
+            <div class="here">
+                地址：长安区郭杜街办茅坡村
+            </div>
+            <div class="btn-shop">
+                <a href="cinemadetail.html" class="shopping">选座购票</a>
+            </div>
+        </div>
+        <div class="vot" id="vot3" style="display:block;">
+            <div class="tiaomu">
+                <a href="cinemadetail.html">高新亿达影院</a>
+            </div>
+            <div class="here">
+                地址：长安区郭杜街办茅坡村
+            </div>
+            <div class="btn-shop">
+                <a href="cinemadetail.html" class="shopping">选座购票</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部信息-->
+<div class="foot">
+    @亿达影院（づ￣3￣）づ╭?～
+    <br/>
+    <br/>
+    欢迎来看电影鸭?|?x?`)在咩？
+</div>
+<script>
+    function show(){
+        document.getElementById("vot1").style.display="block";
+        document.getElementById("vot2").style.display="block";
+        document.getElementById("vot3").style.display="block";
+    }
+    function show1(){
+        document.getElementById("vot1").style.display="block";
+        document.getElementById("vot2").style.display="none";
+        document.getElementById("vot3").style.display="none";
+
+    }
+    function show2(){
+    function show3(){
+        document.getElementById("vot1").style.display="none";
+        document.getElementById("vot2").style.display="block";
+        document.getElementById("vot3").style.display="none"
+    }
+        document.getElementById("vot1").style.display="none";
+        document.getElementById("vot2").style.display="none";
+        document.getElementById("vot3").style.display="block"
+    }
+</script>
+
+<script src="../JavaScript/cinema.js"></script>
+<script src="../JavaScript/tougao.js"></script>
+<script src="../JavaScript/zhuce-ajax.js"></script>
+<script src="../JavaScript/value.js"></script>
+</body>
+</html>

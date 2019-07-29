@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDL♡☆注册</title>
+    <style>
+        body {
+            background-image: url(../images/signin/注册背景.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        .f1-l {
+            float: left;
+        }
+
+        input {
+            text-decoration: none;
+            outline: none;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .login {
+            width: 427px;
+            height: 400px;
+            margin: 50px auto;
+            box-shadow: 0 0 5px 1px #aaa;
+            border-radius: 8px;
+            /*background: #baf;*/
+        }
+
+        .login ul {
+            padding: 30px;
+            list-style: none;
+
+        }
+
+        .login ul li {
+            /*background-color: hotpink;*/
+            position: relative;
+            margin-bottom: 15px;
+
+        }
+
+        .login ul li span {
+            width: 90px;
+            /*height: 40px;*/
+            line-height: 40px;
+            text-align: right;
+            padding: 0 5px;
+        }
+
+        .login ul li input {
+            width: 250px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+        }
+
+        .login ul li input:focus + div.tips {
+            display: block;
+        }
+
+        .login ul li div.tips {
+            width: 250px;
+            padding: 8px;
+            background: #0099ff;
+            color: white;
+            border-radius: 8px;
+            position: absolute;
+            left: 400px;
+            top: 0px;
+            display: none;
+            opacity: 0.8;
+
+        }
+
+        .zhuce {
+            /*background:#000000;*/
+            margin-left: 150px;
+        }
+
+        .btn {
+            height: 33px;
+            box-shadow: 0 0 5px 1px #aaa;
+            border: none;
+            background-color: lightskyblue;
+            text-align: center;
+            display: inline-block;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="login">
+    <form action="" method="">
+        <ul>
+            <li class="clearfix"><span class="f1-l">手机号</span>
+                <input id="telePhone" class="f1-l" type="text" name=""/>
+                <div class="tips">
+                    输入手机号
+                </div>
+            </li>
+            <li class="clearfix"><span class="f1-l">验证码</span>
+                <input id="yzma" class="f1-l" type="text" name=""/>
+                <div class="tips">
+                    填入验证码
+                </div>
+            </li>
+            <li class="clearfix"><span class="f1-l">密码</span>
+                <input id="passWord" class="f1-l" type="password" name=""/>
+                <div class="tips">
+                    输入你的密码
+                </div>
+            </li>
+            <li class="clearfix"><span class="f1-l">重复密码</span>
+                <input id="TpassWord" class="f1-l" type="password" name=""/>
+                <div class="tips">
+                    再次输入密码
+                </div>
+            </li>
+            <li class="zhuce">
+                <input style="width: 80px;margin-left: -35px;" id="btn1" class="btn" type="button" value="注册" name="" />
+                <input style="width: 160px;" id="btn" class="btn" type="button" value="已有账号，我要登录" name="" />
+            </li>
+        </ul>
+    </form>
+</div>
+<script src="../JavaScript/signin.js"></script>
+<script src="../JavaScript/zhuce-ajax.js"></script>
+<script>
+    let Btn = document.getElementById('btn');
+    Btn.onclick = function () {
+        window.location.href = 'PDL登录.html';
+    };
+</script>
+</body>
+</html>

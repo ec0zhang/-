@@ -1,0 +1,279 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*导航栏 背景首页图 搜索框div   top */
+a:link {
+    text-decoration: none; /*正常情况下无下划线*/
+}
+
+.top {
+    width: 100%;
+    height: 180px;
+    /*background-color:#baf;*/
+    background: url(../images/index/1.11.png);
+}
+
+/*首页导航栏*/
+.top .a {
+    width: 100%;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.top .a .b { /*无序列表*/
+    width: 1100px;
+    height: 38px;
+    /*	background-color:pink;*/
+    margin: 0 auto;
+}
+
+.top .a .b ul li {
+    width: 70px;
+    height: 38px;
+    /*快速注释 Ctrl+/*/
+    list-style: none; /*取消无序列表前的小圆点*/
+
+    float: left; /*让无序列表横着,默认是竖着的*/
+    line-height: 38px; /*上下居中 输入行高 字一行的高度 会自动到38的一半的高度 */
+    text-align: center; /*左右居中*/
+    font-size: 16px;
+    text-align: center;
+    font-family: 微软雅黑;
+    /*background-color:deeppink;*/
+
+}
+
+.top .a .b ul li:hover /*当鼠标放到元素上变化*/
+{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.top .a .b ul li a {
+    text-decoration: none; /*取消a的下划线*/
+    display: block;
+    height: 38px;
+    width: 70px;
+    /*a是行间元素 即不能设置长和宽要加那个display：block； 展示方式变成块级元素
+    div是块级元素 可以设置长和宽*/
+    color: #000;
+}
+
+.top .a .b ul li.tougao {
+    height: 50px;
+    width: 70px;
+    background: deeppink;
+    border-radius: 0 0 15px 15px; /*上右下左 圆角*/
+
+}
+
+.top .a .b ul li.tougao a {
+    height: 50px;
+    width: 70px;
+    display: block;
+}
+
+.top .kongbai {
+    /*background-color:green;*/
+    height: 70px;
+    width: 100%;
+}
+
+.top .c {
+    /*	background-color:blue;*/
+    width: 100%;
+    height: 72px;
+}
+
+.top .c .d {
+    /*background-color:#baf;*/
+    width: 1000px;
+    height: 72px;
+    margin: 0 auto;
+    /*margin-right: 40px;*/
+}
+
+.top .c .d .search {
+    width: 370px;
+    height: 72px;
+    /*background-color:white;*/
+    float: right;
+    line-height: 72px; /*让里面东西居中*/
+    padding-right: -60px;
+}
+
+.top .c .d .search .tex { /* 搜索框文本 */
+    background-color: hsla(0, 0%, 100%, 0.88);
+    margin-left: 90px;
+    width: 230px;
+    height: 30px;
+    border-radius: 8px;
+    transition: background-color .2s;
+    border: 1px solid pink;
+    padding-left: 10px;
+    outline: none;
+}
+
+.top .c .d .search .btn { /*搜索框按钮*/
+
+    color: #222;
+    font-size: 12px;
+    box-shadow: none;
+
+    width: 30px;
+    height: 30px;
+    background: url(../images/index/btn.jpg);
+    background-size: 100% 100%;
+}
+
+/*中间版块*/
+.midd {
+
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /*background-color:pink;*/
+}
+
+.midd .midd1 {
+    /*background-color: red;*/
+    width: 62.5%;
+    height: 750px;
+    float: left;
+}
+
+.midd .midd2 {
+    /*background-color: #baf;*/
+    width: 37.5%;
+    height: 750px;
+    float: left;
+}
+
+.tabletitle {
+    font-size: 26px;
+    color: #ef4238;
+}
+
+.desc {
+    text-align: center;
+    background-color: lightpink;
+}
+
+.descx {
+    text-align: center;
+    line-height: 38px;
+    width: 160px;
+    height: 38px;
+
+}
+
+.descx:hover {
+    background-color: hotpink;
+
+}
+
+.paihang:hover {
+
+    /*background:lightpink;*/
+    background: #d8d8d8;
+}
+
+.paihangx:hover {
+
+    background: lightpink;
+    /*background: #d8d8d8;*/
+}
+
+.paihang {
+    width: 360px;
+    height: 35px;
+    /*background-color: pink;*/
+    line-height: 35px;
+    margin-left: -40px;
+
+}
+
+.paihangx {
+    width: 360px;
+    height: 78px;
+    /*background-color: deeppink;*/
+    margin-left: -40px;
+}
+
+.paihangshuzix {
+    width: 120px;
+    height: 78px;
+    /*background-color: deepskyblue;*/
+    float: left;
+
+}
+
+.paihangzix {
+
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #333;
+    /*background-color: black;*/
+
+}
+
+.paihangshuzi {
+    width: 20px;
+    height: 35px;
+    /*background-color: red;*/
+    float: left;
+}
+
+.paihangzi {
+    width: 250px;
+    height: 35px;
+    float: left;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333;
+    /*background:black;*/
+}
+
+.paihangliang {
+    float: right;
+    padding-right: 5px;
+    color: #ef4238;
+}
+
+.xieti1 {
+    margin-right: 20px;
+    color: orangered;
+    font-size: 25px;
+}
+
+.xieti2 {
+    margin-right: 20px;
+    color: cadetblue;
+    font-size: 20px;
+}
+
+/*最底下*/
+.foot {
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 180px;
+    width: 100%;
+    /*background-color:  #ef5556;*/
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(left top, lightpink, #ff8e95); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, lightpink, #ff8e95); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, lightpink, #ff8e95); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, lightpink, #ff8e95) /* 标准的语法（必须放在最后）*/
+}
+
+
+
+

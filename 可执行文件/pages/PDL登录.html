@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDL♡☆登录</title>
+    <style type="text/css">
+        body {
+            background-image: url(../images/signin/注册背景.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        .login_box::before {
+            content: "";
+
+            background-image: url(../images/signin/武陵仙君.jpg);
+
+            z-index: -1;
+            background-size: 500px 300px;
+            width: 500px;
+            height: 300px;
+            position: absolute;
+
+            top: 0px;
+            left: 0px;
+            border-radius: 60px;
+        }
+
+        .login_box {
+            position: fixed;
+            left: 50%;
+            top: 200px;
+            width: 500px;
+            height: 300px;
+            margin-left: -250px;
+            border-radius: 60px;
+            box-shadow: 10px 10px 5px #888;
+            border: 1px solid #666;
+
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            margin-top: 100px;
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            height: 30px;
+            background-color: #bdc3c7;
+            border: 1px solid #fee;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            /*height:30x;*/
+            margin-left: 70px;
+            background-color: #ccc;
+        }
+
+        span {
+            color: red;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="login_box">
+    <form>
+        <input id="zh" type="text" name="nickname" placeholder="账号" style="padding-left:10px ;">
+        <br>
+        <input id="mm" type="password" name="password" placeholder="密码" style="padding-left:10px ;">
+        <br>
+        <input id="btn1" type="button" value="登陆">
+    </form>
+</div>
+<script src="../JavaScript/zhuce-ajax.js"></script>
+<script>
+    document.getElementById('btn1').onclick = function () {
+        // console.log(document.getElementById('btn1'));
+        window.location.href = "../首页.html";
+    };
+    document.getElementById('zh').onblur = function () {
+        // console.log('111');
+        if (!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(document.getElementById('zh').value))) {
+            document.getElementById('zh').style.border = 'red 1.5px solid';
+            alert("请确认手机号码是否正确~");
+        }
+        else {
+            document.getElementById('zh').style.border = '0';
+        }
+    };
+    document.getElementById('mm').onblur = function () {
+        if (!(/^(\w){6,20}$/.test(document.getElementById('mm').value))) {
+            document.getElementById('mm').style.border = 'red 1.5px solid';
+            alert("请确保密码在6-20位哦~");
+        }
+        else {
+            document.getElementById('mm').style.border = '0';
+        }
+    };
+</script>
+</body>
+</html>
